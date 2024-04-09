@@ -1,57 +1,71 @@
-## Micronaut 4.3.6 Documentation
+# CRUD de Categorias en Micronaut con Gradle 
+_Sistema desarrollado por KennerDev_
 
-- [User Guide](https://docs.micronaut.io/4.3.6/guide/index.html)
-- [API Reference](https://docs.micronaut.io/4.3.6/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/4.3.6/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+<p align="center">
+<a href="https://micronaut.io"><img src="https://imgs.search.brave.com/pQgW5L2RpCxKqHGtn1dVArYcpMfgyMkjZ1gozdl4vbk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dC5icmFuZGZldGNo/LmlvL2lkS0VnMUxr/Z2kvaWRzYWN6eUVu/Ny5zdmc_dXBkYXRl/ZD0xNzAxMjgzMzMz/MDQx.svg" width="400" alt="Angular Logo" /></a>
+</p>
 
-- [Micronaut Gradle Plugin documentation](https://micronaut-projects.github.io/micronaut-gradle-plugin/latest/)
-- [GraalVM Gradle Plugin documentation](https://graalvm.github.io/native-build-tools/latest/gradle-plugin.html)
-- [Shadow Gradle Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)
-## Feature openapi documentation
+### Pre-requisitos 📋
 
-- [Micronaut OpenAPI Support documentation](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
+_Para poder inicializar el sistema se requiere lo siguiente :_
 
-- [https://www.openapis.org](https://www.openapis.org)
+```
+1. Git.
+2. Docker.
+3. Micronaut.
+4. IntelliJ (Editor de Codigo).
+```
 
+### Clonar el Repositorio 🔧
 
-## Feature jdbc-hikari documentation
+```
+git clone https://github.com/KennerEspinal/Category-Microservice-Mn.git
+```
+```
+cd Category-Microservice-Mn
+```
 
-- [Micronaut Hikari JDBC Connection Pool documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#jdbc)
+#### Dentro de la raíz del proyecto ejecute el siguiente comando
+```
+ ./gradlew run
+```
 
-
-## Feature swagger-ui documentation
-
-- [Micronaut Swagger UI documentation](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
-
-- [https://swagger.io/tools/swagger-ui/](https://swagger.io/tools/swagger-ui/)
-
-
-## Feature test-resources documentation
-
-- [Micronaut Test Resources documentation](https://micronaut-projects.github.io/micronaut-test-resources/latest/guide/)
-
-
-## Feature data-jdbc documentation
-
-- [Micronaut Data JDBC documentation](https://micronaut-projects.github.io/micronaut-data/latest/guide/index.html#jdbc)
-
-
-## Feature micronaut-aot documentation
-
-- [Micronaut AOT documentation](https://micronaut-projects.github.io/micronaut-aot/latest/guide/)
-
-
-## Feature serialization-jackson documentation
-
-- [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
+> [!WARNING]
+> No es necesario instaciar la base de datos ya que al correr el comando.
+> ```sh
+> ./gradlew run
+> ````
+> El mismo micronaut se encargara da crear dos contenedores uno para la base de datos y otro para la app.
+> si desea crear el Dockerfile usar el comando.
+> ```sh
+> ./gradlew dockerBuild 
+> ````
+> Esto generará en la ruta build/docker/main el archivo Dockerfile con lo necesario para ejecutar.
 
 
-## Feature lombok documentation
+### Correr la App 🚀
+> [!NOTE]
+> Para correr el microservicio: 
+> ```sh
+> ./gradlew run
+> ````
 
-- [Micronaut Project Lombok documentation](https://docs.micronaut.io/latest/guide/index.html#lombok)
 
-- [https://projectlombok.org/features/all](https://projectlombok.org/features/all)
+> [!IMPORTANT]
+> Si desea especificar la base de datos hay un ejemplo en el path resources application.properties de donde puedes guiarte.
+> usando.
+> ```sh
+> docker compose up
+> ````
+> levanta un servicio de mysql y solo con descomentar las lineas en application.properties puede tener una conexión específica a base de datos
 
+## Autor ✒️
 
+- **Kenner Espinal**
+
+## Expresiones de Gratitud 🎁
+
+- Comenta a otros sobre este proyecto 📢
+- Invitanos una cerveza 🍺 o un café ☕ a alguien del equipo.
+- Da las gracias públicamente 🤓.
+- etc.
