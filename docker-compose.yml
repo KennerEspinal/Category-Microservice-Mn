@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  ### MySQL database for Orders
+  mn_categorymn:
+    container_name: mn_categorymn
+    image: mysql:8.0.33
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: mn_categorymn
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin4321
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    expose:
+      - 3306
