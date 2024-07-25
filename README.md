@@ -2,7 +2,7 @@
 _Sistema desarrollado por KennerDev_
 
 <p align="center">
-<a href="https://micronaut.io"><img src="https://imgs.search.brave.com/pQgW5L2RpCxKqHGtn1dVArYcpMfgyMkjZ1gozdl4vbk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dC5icmFuZGZldGNo/LmlvL2lkS0VnMUxr/Z2kvaWRzYWN6eUVu/Ny5zdmc_dXBkYXRl/ZD0xNzAxMjgzMzMz/MDQx.svg" width="400" alt="Angular Logo" /></a>
+<a href="https://micronaut.io"><img src="https://micronaut.io/wp-content/uploads/2020/11/MIcronautLogo_Horizontal.svg" width="400" alt="Micronaut Logo" /></a>
 </p>
 
 ### Pre-requisitos 📋
